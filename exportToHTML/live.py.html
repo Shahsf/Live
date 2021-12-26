@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>live.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+live.py</font>
+</center></td></tr></table>
+<pre><span class="s0">def </span><span class="s1">welcome(name):</span>
+    <span class="s0">return </span><span class="s1">(</span><span class="s2">f&quot;Hello </span><span class="s0">{</span><span class="s1">name</span><span class="s0">} </span><span class="s2">and welcome to the World of Games &quot;</span>
+            <span class="s2">f&quot;here you can find many cool games yo play&quot;</span><span class="s1">)</span>
+
+
+<span class="s0">def </span><span class="s1">load_game():</span>
+    <span class="s1">game_options = {</span><span class="s2">'1'</span><span class="s1">: </span><span class="s2">'Memory Game - a sequence of numbers will apper for 1 second and you have to guess it back'</span><span class="s0">,</span>
+                    <span class="s2">'2'</span><span class="s1">: </span><span class="s2">'Guess Game-guess a number and see if you chose like the computer'</span><span class="s0">,</span>
+                    <span class="s2">'3'</span><span class="s1">: </span><span class="s2">'Currency Roulette - try and guess the balue of a random amount of Usd in iLS'</span><span class="s1">}</span>
+    <span class="s1">game_input = input(</span>
+        <span class="s2">&quot;Choose a Game to Play- </span><span class="s0">\n </span><span class="s2">1: Memory Game - a sequence of numbers will apper for 1 second and you have to &quot;</span>
+        <span class="s2">&quot;guess it back</span><span class="s0">\n </span><span class="s2">2: Guess Game-guess a number and see if you chose like the computer</span><span class="s0">\n </span><span class="s2">3: Currency Roulette - &quot;</span>
+        <span class="s2">&quot;try and guess the value of a random amount of Usd in iLS </span><span class="s0">\n </span><span class="s2">Choose The game Number: &quot;</span><span class="s1">)</span>
+
+    <span class="s0">while </span><span class="s1">game_input </span><span class="s0">not in </span><span class="s1">game_options:</span>
+        <span class="s1">print(</span><span class="s2">&quot;You Entered an Invalid Input Please Try again&quot;</span><span class="s1">)</span>
+        <span class="s1">game_input = input(</span>
+            <span class="s2">&quot;Choose a Game to Play- </span><span class="s0">\n </span><span class="s2">1: Memory Game - a sequence of numbers will apper for 1 second and you have to &quot;</span>
+            <span class="s2">&quot;guess it back</span><span class="s0">\n </span><span class="s2">2: Guess Game-guess a number and see if you chose like the computer</span><span class="s0">\n </span><span class="s2">3: Currency &quot;</span>
+            <span class="s2">&quot;Roulette - try and guess the value of a random amount of Usd in iLS </span><span class="s0">\n </span><span class="s2">Choose The game Number: &quot;</span><span class="s1">)</span>
+
+    <span class="s1">game_difficulty = {</span><span class="s2">'1'</span><span class="s0">, </span><span class="s2">'2'</span><span class="s0">, </span><span class="s2">'3'</span><span class="s0">, </span><span class="s2">'4'</span><span class="s0">, </span><span class="s2">'5'</span><span class="s1">}</span>
+    <span class="s1">difficulty = input(</span><span class="s2">&quot;Please Choose game difficulty from 1 to 5: &quot;</span><span class="s1">)</span>
+
+    <span class="s0">while </span><span class="s1">difficulty </span><span class="s0">not in </span><span class="s1">game_difficulty:</span>
+        <span class="s1">print(</span><span class="s2">&quot;You Choose difficulty that Doesn't exist Please try again&quot;</span><span class="s1">)</span>
+        <span class="s1">difficulty = input(</span><span class="s2">&quot;Please Choose game difficulty from 1 to 5: &quot;</span><span class="s1">)</span>
+</pre>
+</body>
+</html>
